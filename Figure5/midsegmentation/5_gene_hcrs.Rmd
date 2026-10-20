@@ -1,0 +1,101 @@
+---
+title: "multi-gene-hcr"
+author: "ST"
+date: '2024-07-14'
+output: html_document
+---
+```{r}
+library('ggplot2')
+library('reshape2')
+library("scales")
+library('tidyquant')
+```
+
+```{r}
+cichlid_colours = c('#C3BE46FF', '#4D4D4DFF',  '#00CCFF') # calliptera, Ramphos, zebras
+
+```
+
+```{r}
+import <- function(fname, channel) {
+  data <- read.csv(fname)
+  
+  # select only the channel of interest
+  data <- data[c(1, channel + 3)]
+  
+  #rescale both channels
+  data[[1]] <- rescale(data[[1]])
+  data[[2]] <- rescale(data[[2]])
+  
+  #convert column names for easy plotting 
+  colnames(data) <- c('AP_position', 'Expression')
+  
+  return(data)
+}
+
+```
+
+
+
+```{r}
+metadata <- read.csv('data/metadata.csv')
+# remove lines we don't want 
+metadata <- metadata[,0:7]
+metadata <- metadata[!metadata$skip,]
+metadata$stage = NULL
+metadata <- na.omit(metadata)
+
+
+data <- data.frame()
+
+ndim = dim(metadata)[1]
+
+for (i in c(1:ndim)){
+  # extract all metadata from the file 
+  fname <- paste('data/', metadata$filename[i], sep='')
+  channel <- metadata[i, 2]
+  genename <- metadata[i, 3]
+  embryo_name <- metadata[i, 4]
+  species <- metadata[i, 5]
+  stage <- metadata[i, 6]
+
+  # import the data and add metadata
+  dat <- import(fname, channel)
+  dat$species <- species 
+  dat$gene_name <- genename 
+  dat$name <- embryo_name
+  dat$stage <- stage
+  
+
+  data <- rbind(data, dat)
+
+    
+}
+
+data$species[data$species == "R. chillingali"] <- "R. chilingali"
+
+```
+
+
+
+```{r}
+ggplot(data, aes(x = AP_position, 
+                 y = Expression, 
+                 color = species, 
+                 group = name)) + 
+  geom_line(alpha = 0.2) + 
+  geom_ma(ma_fun = SMA, n = 10, 
+    linetype = 'solid', linewidth = 1) + 
+  facet_wrap('gene_name', ncol = 5) + 
+  theme_bw() + 
+  scale_color_manual(values = cichlid_colours) + 
+  xlab('Position (AP)') + 
+  ylab('Expression (AU)') + 
+  theme(legend.position="right")
+
+
+ggsave('../../graphs/Fig5I.png', dpi = 300, width = 10, height = 2.2)
+```
+
+
+

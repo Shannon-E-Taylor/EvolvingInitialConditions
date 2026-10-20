@@ -1,0 +1,35 @@
+filename ,channel,gene,embryo_name,species,stage,skip
+AVG_A calli anat hcr 1_Overview 1_Series 9_P 1.tifall.csv,1,DAPI,AC1,A. calliptera,0,TRUE
+AVG_A calli anat hcr 1_Overview 1_Series 9_P 1.tifall.csv,2,msgn,AC1,A. calliptera,0,FALSE
+AVG_A calli anat hcr 1_Overview 1_Series 9_P 1.tifall.csv,3,tbxta,AC1,A. calliptera,0,FALSE
+AVG_A calli anat hcr 1_Overview 1_Series 9_P 1.tifall.csv,4,myod,AC1,A. calliptera,0,TRUE
+AVG_A calli anat hcr 1_Overview 1_Series 9_P 1.tifall.csv,5,tbx16,AC1,A. calliptera,0,FALSE
+AVG_A calli anat hcr 1_Overview 1_Series 9_P 1.tifall.csv,6,tbx6,AC1,A. calliptera,0,FALSE
+AVG_A calli anat hcr 1_Overview 1_Series 9_P 1.tifmyod.csv,4,myod,AC1,A. calliptera,0,FALSE
+R_chilli_1_20240520.tifall.csv,1,DAPI,RC1,R. chillingali,,TRUE
+R_chilli_1_20240520.tifall.csv,2,msgn,RC1,R. chillingali,,FALSE
+R_chilli_1_20240520.tifall.csv,3,tbxta,RC1,R. chillingali,,FALSE
+R_chilli_1_20240520.tifall.csv,4,myod,RC1,R. chillingali,,TRUE
+R_chilli_1_20240520.tifall.csv,5,tbx16,RC1,R. chillingali,,FALSE
+R_chilli_1_20240520.tifall.csv,6,tbx6,RC1,R. chillingali,,FALSE
+R_chilli_1_20240520.tifmyod.csv,4,myod,RC1,R. chillingali,,FALSE
+R_chilli_2_20240520.tifall.csv,1,DAPI,RC2,R. chillingali,,TRUE
+R_chilli_2_20240520.tifall.csv,2,msgn,RC2,R. chillingali,,FALSE
+R_chilli_2_20240520.tifall.csv,3,tbxta,RC2,R. chillingali,,FALSE
+R_chilli_2_20240520.tifall.csv,4,myod,RC2,R. chillingali,,TRUE
+R_chilli_2_20240520.tifall.csv,5,tbx16,RC2,R. chillingali,,FALSE
+R_chilli_2_20240520.tifall.csv,6,tbx6,RC2,R. chillingali,,FALSE
+R_chilli_3_20240520.tifall.csv,1,DAPI,RC3,R. chillingali,,TRUE
+R_chilli_3_20240520.tifall.csv,2,msgn,RC3,R. chillingali,,FALSE
+R_chilli_3_20240520.tifall.csv,3,tbxta,RC3,R. chillingali,,FALSE
+R_chilli_3_20240520.tifall.csv,4,myod,RC3,R. chillingali,,TRUE
+R_chilli_3_20240520.tifall.csv,5,tbx16,RC3,R. chillingali,,FALSE
+R_chilli_3_20240520.tifall.csv,6,tbx6,RC3,R. chillingali,,FALSE
+R_chilli_3_20240520.tifmyod.csv,4,myod,RC3,R. chillingali,,FALSE
+Project_Image001.tifall.csv,1,DAPI,AC2,A. calliptera,0,TRUE
+Project_Image001.tifall.csv,2,msgn,AC2,A. calliptera,0,FALSE
+Project_Image001.tifall.csv,3,tbxta,AC2,A. calliptera,0,FALSE
+Project_Image001.tifall.csv,4,myod,AC2,A. calliptera,0,TRUE
+Project_Image001.tifall.csv,5,tbx16,AC2,A. calliptera,0,FALSE
+Project_Image001.tifall.csv,6,tbx6,AC2,A. calliptera,0,FALSE
+Project_Image001.tifmyod.csv,4,myod,AC2,A. calliptera,0,FALSE
