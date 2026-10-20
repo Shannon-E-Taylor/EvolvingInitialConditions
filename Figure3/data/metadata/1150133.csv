@@ -1,0 +1,2 @@
+,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,x_max_lab,y_max_lab,z_max_lab,species,type,Embryo_id,stain,MeOH,embryo_id,label_id,z,src0,src1,dst0,dst1
+0,1150133,1894,972,150,0.4151329104819196,0.4151329104819196,0.39511461638307926,1,1894,972,150,R. chillingali,label,Rickshaw_2,phal,FALSE,Rickshaw_2,1151536,63,570.4350000000002,1570.2900000000006,459.9350000000002,572.3900000000002

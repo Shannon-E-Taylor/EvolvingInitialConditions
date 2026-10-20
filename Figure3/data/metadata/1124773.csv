@@ -1,0 +1,2 @@
+,somite_count,species,overview_id,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,x_max_lab,y_max_lab,z_max_lab,type,Embryo_id,embryo_id,label_id,z,src0,src1,dst0,dst1
+0,21,R. chillingali,1124771,1124773,512,1432,120,0.4151329104819196,0.4151329104819196,0.39496022755106486,1,512,1432,120,label,Image_20,Image_20,1124784,93,297.89500000000004,171.36166666666668,1006.3950000000002,276.66166666666675

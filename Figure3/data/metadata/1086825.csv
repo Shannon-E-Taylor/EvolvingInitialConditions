@@ -1,0 +1,2 @@
+,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,somite_count,species,overview_id,x_max_lab,y_max_lab,z_max_lab,type,Embryo_id,embryo_id,label_id,z,src0,src1,dst0,dst1
+0,1086825,1024,1708,188,0.2075664552409598,0.2075664552409598,0.37391464869492785,1,24,A. calliptera,1131790,1024,1708,188,label,Doudna_2,Doudna_2,1087461,122,200.30499999999995,297.5350000000001,1340.6050000000005,677.6350000000002

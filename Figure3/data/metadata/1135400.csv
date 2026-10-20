@@ -1,0 +1,2 @@
+,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,somite_count,species,overview_id,x_max_lab,y_max_lab,z_max_lab,type,stain,MeOH,Embryo_id,embryo_id,label_id,z,src0,src1,dst0,dst1
+0,1135400,512,972,223,0.4151329104819196,0.4151329104819196,0.42218377857467804,1,24,R. chillingali,1135401,512,972,223,label,phalloidin,FALSE,Smith_31,Smith_31,1150557,98,752.8266666666666,272.73625000000004,235.75166666666667,248.68624999999997

@@ -1,0 +1,2 @@
+,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,somite_count,species,overview_id,x_max_lab,y_max_lab,z_max_lab,embryo_id,type,stain,MeOH,success,label_id,z,src0,src1,dst0,dst1
+0,1124218,1432,972,164,0.4151329104819196,0.4151329104819196,0.36620496399803043,2,6,A. calliptera,1124211,1432,972,164,Hill_1,label,hcr,FALSE,,1124994,56,498.7733333333336,97.25333333333342,425.1733333333335,972.4533333333337

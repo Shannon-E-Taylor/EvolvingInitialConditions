@@ -1,0 +1,2 @@
+,somite_count,species,overview_id,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,x_max_lab,y_max_lab,z_max_lab,type,stain,MeOH,embryo_id,label_id,z,src0,src1,dst0,dst1
+0,10,R. chillingali,1150120,1150116,972,1894,91,0.4151329104819196,0.4151329104819196,0.4265383697093655,2,972,1894,91,label,hcr,FALSE,Adler_7,1151683,25,278.89666666666693,379.2333333333338,1459.9966666666678,503.2333333333338

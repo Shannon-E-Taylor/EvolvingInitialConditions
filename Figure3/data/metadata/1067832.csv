@@ -1,0 +1,2 @@
+,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,somite_count,species,overview_id,x_max_lab,y_max_lab,z_max_lab,Embryo_id,embryo_id,label_id,z,src0,src1,dst0,dst1
+0,1067832,512,384,130,0.9375005859378663,0.9375005859378663,0.76,0,18,A. calliptera,1067828,512,384,130,Babbage_4,Babbage_4,1069770,85,218.44999999999973,11.6875,206.97499999999974,363.16249999999957

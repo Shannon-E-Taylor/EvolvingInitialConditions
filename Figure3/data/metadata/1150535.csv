@@ -1,0 +1,2 @@
+,somite_count,species,overview_id,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,x_max_lab,y_max_lab,z_max_lab,type,stain,MeOH,Embryo_id,embryo_id,label_id,z,src0,src1,dst0,dst1
+0,13,A. calliptera,1150507,1150535,1432,512,218,0.5189161381023994,0.5189161381023994,0.42218377857467804,1,1432,512,218,label,phalloidin,FALSE,Spring_11,Spring_11,1150526,154,225.81666666666666,261.50250000000005,247.91666666666663,1001.8525

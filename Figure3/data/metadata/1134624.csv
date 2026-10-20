@@ -1,0 +1,2 @@
+,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,somite_count,species,overview_id,x_max_lab,y_max_lab,z_max_lab,Embryo_id,type,stain,MeOH,success,embryo_id,label_id,z,src0,src1,dst0,dst1
+0,1134624,512,1534,133,0.4151329104819196,0.4151329104819196,0.39389298907489145,2,17,R. chillingali,1134619,512,1534,133,Olga_11,label,NMP,FALSE,FALSE,Olga_11,1151684,36,317.63333333333344,238.3666666666669,1031.633333333334,300.3666666666669

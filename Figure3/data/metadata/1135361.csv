@@ -1,0 +1,2 @@
+,psm_id,x_max,y_max,z_max,xsize,ysize,zsize,dapi_index,somite_count,species,overview_id,x_max_lab,y_max_lab,z_max_lab,Embryo_id,type,stain,MeOH,success,embryo_id,label_id,z,src0,src1,dst0,dst1
+0,1135361,972,512,153,0.4151329104819196,0.4151329104819196,0.4265383697093655,2,18,A. calliptera,1135358,972,512,153,Olga_1,label,NMP,FALSE,TRUE,Olga_1,1151664,97,213.48333333333335,880.1166666666667,263.48333333333335,248.11666666666667
