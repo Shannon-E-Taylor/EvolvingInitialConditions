@@ -1,0 +1,109 @@
+---
+title: "10ss_tbox"
+author: "ST"
+date: "2024-11-25"
+output:
+  html_document: default
+  word_document: default
+---
+
+
+```{r}
+library('ggplot2')
+library('reshape2')
+library("scales")
+library('tidyquant')
+
+
+
+cichlid_colours = c('#C3BE46FF', '#4D4D4DFF',  '#00CCFF') # calliptera, Ramphos, zebras
+
+```
+
+
+
+```{r}
+import <- function(fname, channel) {
+  data <- read.csv(fname)
+  
+  # select only the channel of interest
+  data <- data[c(1, channel + 3)]
+  
+  #rescale both channels
+  data[[1]] <- rescale(data[[1]])
+  data[[2]] <- rescale(data[[2]])
+  
+  #convert column names for easy plotting 
+  colnames(data) <- c('AP_position', 'Expression')
+  
+  return(data)
+}
+```
+
+```{r}
+metadata <- read.csv('data/metadata.csv')
+# remove lines we don't want 
+metadata <- metadata[!metadata$skip,]
+
+
+data <- data.frame()
+
+ndim = dim(metadata)[1]
+
+for (i in c(1:ndim)){
+  # extract all metadata from the file 
+  fname <- paste('data/', metadata[i, 1], '_.csv', sep='')
+  channel <- metadata[i, 2]
+  genename <- metadata[i, 3]
+  embryo_name <- metadata[i, 4]
+  species <- metadata[i, 5]
+  stage <- metadata[i, 6]
+
+  # import the data and add metadata
+  dat <- import(fname, channel)
+  dat$species <- species 
+  dat$gene_name <- genename 
+  dat$name <- embryo_name
+  dat$stage <- stage
+  
+
+  data <- rbind(data, dat)
+
+    
+}
+
+```
+
+
+
+
+```{r}
+ggplot(data[data$gene_name %in% c('tbx16', 'tbxta'),], aes(x = AP_position, 
+                 y = Expression, 
+                 color = species, 
+                 group = name)) + 
+  geom_line(alpha = 0.2, linewidth = 0.1) + 
+  geom_ma(ma_fun = SMA, 
+          n = 20, 
+          linetype = 'solid', 
+          linewidth = 0.5) + 
+  facet_wrap('gene_name', nrow = 2) + 
+  # facet_grid(name~gene_name)+
+  theme_bw() + 
+  scale_color_manual(values = cichlid_colours) + 
+  xlab('Position (AP)') + 
+  ylab('Expression (AU)') + 
+  theme(legend.position = 'bottom', 
+        legend.title=element_blank(),
+      legend.margin = margin(-5, 0, 0, 0)
+      )+
+  guides(color = guide_legend(nrow = 2))
+#top, right, bottom, left
+scale = 1.6
+
+ggsave('../../graphs/Fig5F.png', 
+       width = 2.8*scale, 
+       height = 6*scale, units= 'cm', dpi = 600)
+```
+
+
