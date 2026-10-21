@@ -121,10 +121,8 @@ from datetime import date
 today = date.today()
 
 # save a dated copy
-metadata.to_csv(f'../../psm_morphometrics/data/archive/volumes_{today}.csv')
+# metadata.to_csv(f'../../psm_morphometrics/data/archive/volumes_{today}.csv')
 
 # save the in-use copy
-metadata.to_csv('../../psm_morphometrics/data/volumes.csv')
-
-metadata.to_csv('../data/volumes.csv')
+metadata.to_csv('../../data/volumes.csv')
 

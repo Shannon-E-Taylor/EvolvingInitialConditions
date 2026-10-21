@@ -41,7 +41,7 @@ cell_numbers = cell_numbers.apply(process, axis = 1)
 from datetime import date
 today = date.today()
 
-cell_numbers.to_csv(f'../../psm_morphometrics/data/archive/cell_numbers_{today}.csv')
-cell_numbers.to_csv(f'../../psm_morphometrics/data/cell_numbers.csv')
+# cell_numbers.to_csv(f'../../psm_morphometrics/data/archive/cell_numbers_{today}.csv')
+cell_numbers.to_csv(f'../../data/cell_numbers.csv')
 
 print('Done!')
