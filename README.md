@@ -1,5 +1,6 @@
 # EvolvingInitialConditions
 
+Data and scripts associated with Taylor et al. https://doi.org/10.64898/2026.04.01.715779  
 
 ## Figure 1
 
